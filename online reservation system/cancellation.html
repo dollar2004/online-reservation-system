@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancellation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="cancellation-container">
+        <h1>Cancel Reservation</h1>
+        <form id="cancellationForm">
+            <label for="pnrNumber">PNR Number:</label>
+            <input type="text" id="pnrNumber" name="pnrNumber" required>
+            <button type="submit">Cancel Ticket</button>
+        </form>
+        <div id="cancellationInfo" style="display:none;">
+            <!-- Display reservation info here -->
+        </div>
+        <button id="confirmCancellation" style="display:none;">OK</button>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>

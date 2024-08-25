@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="reservation-container">
+        <h1>Reservation</h1>
+        <form id="reservationForm">
+            <label for="basicDetails">Basic Details:</label>
+            <input type="text" id="basicDetails" name="basicDetails" required>
+            <label for="trainNumber">Train Number:</label>
+            <input type="text" id="trainNumber" name="trainNumber" required>
+            <label for="trainName">Train Name:</label>
+            <input type="text" id="trainName" name="trainName" readonly>
+            <label for="classType">Class Type:</label>
+            <select id="classType" name="classType">
+                <option value="sleeper">Sleeper</option>
+                <option value="AC">AC</option>
+            </select>
+            <label for="dateOfJourney">Date of Journey:</label>
+            <input type="date" id="dateOfJourney" name="dateOfJourney" required>
+            <label for="fromPlace">From:</label>
+            <input type="text" id="fromPlace" name="fromPlace" required>
+            <label for="toDestination">To:</label>
+            <input type="text" id="toDestination" name="toDestination" required>
+            <button type="submit">Submit Reservation</button>
+        </form>
+    </div>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
